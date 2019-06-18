@@ -1,10 +1,9 @@
 # SwiftString
 
-[![Version](https://img.shields.io/cocoapods/v/String+Extensions.svg?style=flat)](http://cocoapods.org/pods/String+Extensions)
-[![License](https://img.shields.io/cocoapods/l/String+Extensions.svg?style=flat)](http://cocoapods.org/pods/String+Extensions) ![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg) ![Language](https://img.shields.io/badge/language-Swift%204.0-orange.svg)
+[![License](https://img.shields.io/cocoapods/l/String+Extensions.svg?style=flat)](http://cocoapods.org/pods/String+Extensions) ![Language](https://img.shields.io/badge/language-Swift%204.0-orange.svg)
 
 
-SwiftString is a lightweight string extension for Swift 3 and 4.
+SwiftString is a lightweight string extension for Swift 4.
 This library was motivated by having to search StackOverflow for common string operations,
 and wanting them to be in one place with test coverage.
 
@@ -15,18 +14,8 @@ Note the original client side Swift 2 repo can be found here:
 
 This fork is intended as a server side utility.
 
-* It is Swift 3.x, 4.0 and Swift Package Manager (SPM) ready.
+* It is Swift 4.x and Swift Package Manager (SPM) ready.
 * Added sigificant test coverage
-
-## Swift 3.0.2, 3.1 only
-
-If you are targeting Swift 3.0.2 or 3.1 only, please use the majorVersion:1 in your Package.swift file:
-
-``` swift
-.Package(url: "https://github.com/iamjono/SwiftString.git", majorVersion: 1),
-```
-
-This release works for both Swift 3.0.2 and 3.1, on macOS and Linux.
 
 
 ## Swift 3.0.2, 3.1, 3.2 and Swift 4.0
@@ -34,10 +23,10 @@ This release works for both Swift 3.0.2 and 3.1, on macOS and Linux.
 If you have updated to Swift 4, or plan to in the near future, use the majorVersion:2 in your Package.swift file. This version brings compatibility with Swift 4, and is backwards compatible with the 3.x codebases.
 
 ``` swift
-.Package(url: "https://github.com/iamjono/SwiftString.git", majorVersion: 2),
+.package(url: "https://github.com/nitishmakhija/SwiftString.git", from: "3.0.0"),
 ```
 
-The latest release works for Swift 3.x and Swift 4 on macOS and Linux.
+The latest release works for Swift 4.x on macOS and Linux.
 
 
 ## Usage
@@ -424,7 +413,7 @@ root.join(paths: ["bar", "/baz", "..", "//somedata.txt"]) // root == "/foo/bar/s
 
 ## Requirements
 
-- Swift version 3.x or Swift 4. Please see notes above.
+- Swift version Swift 4.x Please see notes above.
 
 ## Installation
 
@@ -433,9 +422,9 @@ root.join(paths: ["bar", "/baz", "..", "//somedata.txt"]) // root == "/foo/bar/s
 * Add the following to your `Package.swift` file:
 
 ``` swift
-.Package(
+.package(
     url: "https://github.com/iamjono/SwiftString.git",
-    majorVersion: 2
+    from: "3.0.0"
     ),
 ```
 
@@ -445,12 +434,6 @@ Then, regenerate your Xcode project:
 swift package generate-xcodeproj
 ```
 
-### Install via Cocoapods
-
-```ruby
-pod "String+Extensions"
-```
-
 ## Author
 
 Andrew Mayne, andrew@redbricklab.com
@@ -458,6 +441,8 @@ Andrew Mayne, andrew@redbricklab.com
 Swift 3 & 4 SPM module, Jonathan Guthrie, jono@guthrie.net.nz
 
 Cocoapods, Koji Murata, malt.koji@gmail.com
+
+Swift 4 SPM module, Nitish Makhija, nitishmakhija@gmail.com
 
 ## License
 
