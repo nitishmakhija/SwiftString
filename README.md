@@ -18,9 +18,7 @@ This fork is intended as a server side utility.
 * Added sigificant test coverage
 
 
-## Swift 3.0.2, 3.1, 3.2 and Swift 4.0
-
-If you have updated to Swift 4, or plan to in the near future, use the majorVersion:2 in your Package.swift file. This version brings compatibility with Swift 4, and is backwards compatible with the 3.x codebases.
+## Swift 4.x
 
 ``` swift
 .package(url: "https://github.com/nitishmakhija/SwiftString.git", from: "3.0.0"),
